@@ -1,0 +1,54 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <style>
+        .box {
+            width: 400px;
+            height: 500px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .box img {
+            width: 1000px;
+            position: relative;
+            top: -60%;
+            left: -75%;
+            object-fit:cover;
+            animation: move 4s linear infinite;
+        }
+        h1 {
+            font-family: "Noto Serif TC", serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            background-color: antiquewhite;
+            color:darkslategray;
+            position: absolute;
+            top: 400px;
+            left: 50px;
+        }
+        
+    
+        @keyframes move{
+        0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    
+</head>
+
+<body>
+    <div style="height: 400px; width: 400px;">
+        <div class="box">
+            <img src="./background.png">
+        </div>
+        <h1> 你已被好運菠蘿貓造訪 </h1>
+        <img width="400px" style="position: absolute; top: 0;" src="./cat.png" >
+    </div>
+</body>
+
